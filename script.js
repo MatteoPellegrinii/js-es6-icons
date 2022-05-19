@@ -116,6 +116,8 @@ const data = [
 let container = document.getElementById("container");
 
 
+
+
 data.forEach((element) => {
     let divIcon = document.createElement("div");
     divIcon.classList.add("card")
@@ -132,18 +134,20 @@ data.forEach((element) => {
     iclass.classList.add("fa-solid")
     iclass.classList.add(iconaprefix);
 
-    if (element.color = "green") {
-        
-    }
 
-    
+
 }
 );
+const selectElement = document.querySelector('.tipo');
+
+selectElement.addEventListener('change', (x) =>{
+    let tipo = data.filter( element => element.type = "animal" )
+    console.log(tipo);
+    
+});
 
 
-if (document.querySelector(".colore").getElementsByTagName('option')[3].selected = 'selected') {
 
-}
 
 
 
