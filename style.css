@@ -1,0 +1,32 @@
+.orange {
+    color: orange;
+}
+.green {
+    color: green;
+}
+.blue {
+    color: blue;
+}
+#container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    
+    flex-wrap: wrap;
+    background-color: rgba(128, 128, 128, 0.447);
+    justify-content: center;
+}
+.card{
+    width: 15%;
+    height: 100px;
+    text-align: center;
+    border: solid 1px black;
+    margin: 20px;
+    background-color: white;
+}
+.card i{
+    font-size: 40px;
+}
+h3{
+    margin: 0;
+}

@@ -123,10 +123,15 @@ data.forEach((element) => {
 
     let iclass = document.createElement("i");
     divIcon.append(iclass);
+    let iconaname = document.createElement("h3");
+    divIcon.append(iconaname);
+    iconaname.append(element.name);
 
     let iconaprefix = element.prefix + element.name;
+    iclass.classList.add(element.color)
     iclass.classList.add("fa-solid")
     iclass.classList.add(iconaprefix);
+
     
 }
 );
