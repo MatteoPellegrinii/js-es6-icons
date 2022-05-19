@@ -116,33 +116,33 @@ const data = [
 let container = document.getElementById("container");
 
 
-
-
-data.forEach((element) => {
-    let divIcon = document.createElement("div");
-    divIcon.classList.add("card")
-    container.append(divIcon);
-
-    let iclass = document.createElement("i");
-    divIcon.append(iclass);
-    let iconaname = document.createElement("h3");
-    divIcon.append(iconaname);
-    iconaname.append(element.name);
-
-    let iconaprefix = element.prefix + element.name;
-    iclass.classList.add(element.color)
-    iclass.classList.add("fa-solid")
-    iclass.classList.add(iconaprefix);
-
-
-
-}
-);
 const selectElement = document.querySelector('.tipo');
 
 selectElement.addEventListener('change', (x) =>{
-    let tipo = data.filter( element => element.type = "animal" )
-    console.log(tipo);
+    let seclectOption = selectElement.options[selectElement.selectedIndex].value;
+    let tipo = data.filter( elmet => elmet.type == seclectOption )
+    
+
+    tipo.forEach((element) => {
+        let divIcon = document.createElement("div");
+        divIcon.classList.add("card")
+        container.append(divIcon);
+    
+        let iclass = document.createElement("i");
+        divIcon.append(iclass);
+        let iconaname = document.createElement("h3");
+        divIcon.append(iconaname);
+        iconaname.append(element.name);
+    
+        let iconaprefix = element.prefix + element.name;
+        iclass.classList.add(element.color)
+        iclass.classList.add("fa-solid")
+        iclass.classList.add(iconaprefix);
+    
+    
+    }
+    );
+    
     
 });
 
