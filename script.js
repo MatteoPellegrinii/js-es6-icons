@@ -132,9 +132,20 @@ data.forEach((element) => {
     iclass.classList.add("fa-solid")
     iclass.classList.add(iconaprefix);
 
+    if (element.color = "green") {
+        
+    }
+
     
 }
 );
+
+
+if (document.querySelector(".colore").getElementsByTagName('option')[3].selected = 'selected') {
+
+}
+
+
 
 
 
